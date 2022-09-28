@@ -1,10 +1,10 @@
 <?php
 
-function exibeMensagem($mensagem){
+function exibeMensagem(string $mensagem){
     echo $mensagem . PHP_EOL;
 }
 
-function sacar($conta, float $valorASacar)
+function sacar(array $conta, float $valorASacar): array
 {
     if ($valorASacar > $conta['saldo']) {
         exibeMensagem("Você não pode sacar este valor");
@@ -16,7 +16,7 @@ function sacar($conta, float $valorASacar)
 
 }
 
-function depositar($conta, $valorADepositar)
+function depositar(array $conta, float $valorADepositar)
 {
     if ($valorADepositar > 0) {
         $conta['saldo'] += $valorADepositar;
