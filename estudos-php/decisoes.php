@@ -16,5 +16,3 @@ else {
         echo "Você só tem $idade anos. Você não pode entrar!";
     }
 } 
-
-loucura
