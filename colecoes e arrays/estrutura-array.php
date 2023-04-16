@@ -13,5 +13,3 @@ foreach ($array as $numeral => $nomeNumero) {
 }
 
 echo "Total: " . count($array) . PHP_EOL;
-
-//comentario teste
